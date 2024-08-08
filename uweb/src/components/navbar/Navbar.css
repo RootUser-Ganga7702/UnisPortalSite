@@ -1,0 +1,120 @@
+.navbar {
+  background-color: #012C55;
+  padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   z-index: 1000;
+   width: 100%;
+   position: fixed;
+   top:0;
+   left: 0;
+
+
+  }
+
+
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+ 
+  .navbar-logo {
+    flex-shrink: 0;
+    margin-right:25px;
+  }
+ 
+  .logo {
+    height: 60px; /* Adjust as needed */
+    padding-left: 100px;
+  }
+ 
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .nav-item {
+    position: relative;
+     /* Ensures dropdown menu is positioned relative to this item */
+  }
+
+  #newIdSer{
+    color: #fff;
+  }
+  /* Ensure all links and dropdown items are the same size */
+  .nav-link, .dropdown-item {
+    color:rgb(252, 252, 251);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    height: 40px; /* Set height to match other items */
+    line-height: 40px; /* Ensures vertical centering */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+  }
+ 
+  /* Consistent font size for nav links and dropdown items */
+  .nav-link, .dropdown-item {
+    font-size: 18px; /* Adjust as needed */
+    font-weight:normal;
+  }
+
+  .iconEdit{
+    margin-right: 5px;
+  }
+ 
+  .nav-link:hover,
+  .nav-link:focus,
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight:normal;
+    text-underline-offset: 8px;
+    color: #C63C51;
+  }
+ 
+  /* Dropdown toggle styling */
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    color:black;
+    cursor: pointer;
+    font-size: 20px; /* Ensure font size consistency */
+    height: 40px; /* Match the height of other items */
+    line-height: 40px; /* Align text vertically */
+  }
+ 
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aligns the top of the dropdown with the bottom of the nav-item */
+    left: 0;
+    background-color: #012C55;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    min-width: 200px; /* Ensure enough width to accommodate content */
+    border-radius: 4px;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+ 
+  /* Ensure dropdown items are the same size */
+  .dropdown-menu .dropdown-item {
+    height: 40px; /* Match height of other items */
+    line-height: 40px; /* Align text vertically */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+  }
+ 
+  /* Show the dropdown menu on hover */
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }

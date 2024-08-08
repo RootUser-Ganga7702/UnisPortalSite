@@ -1,0 +1,144 @@
+.mainfoot {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.newAdd{
+  display: flex;
+  flex-direction: row;
+
+}
+.card0{
+  margin-right: 25px;
+}
+.footer-card {
+  background: #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
+  animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+.image-card{
+  background: none;
+  border-radius: none;
+  box-shadow: none;
+}
+.footer-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.contact-card h1,
+.address-card h1,
+.hours-card h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contact-card p,
+.address-card p,
+.hours-card p {
+  color: #bbbbbb;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.newOne{
+  margin-top: 60px;
+}
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00aced; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-bottom hr {
+  border: 0;
+  height: 1px;
+  background: #ecf0f1;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.footer-bottom p {
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+.footer-content{
+  margin-top:10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-card {
+    width: 90%;
+    max-width: 500px; /* Ensure card does not stretch too wide on small screens */
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+}

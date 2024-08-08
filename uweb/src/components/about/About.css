@@ -1,0 +1,138 @@
+/* src/components/About.css */
+ 
+/* Global Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff; /* White background for the entire page */
+}
+ 
+body {
+  background-color: #ffffff; /* White background for the body */
+}
+.unis {
+  overflow-x: hidden;
+  background-color: #ffffff; /* Ensure the container has a white background */
+  min-height: 100vh; /* Ensure the container takes full height */
+}
+ 
+/* Heading Styles */
+.heading {
+  font-size: 3rem;
+  color: #e94560;
+  text-align: center;
+  margin-top: 100px;
+}
+ 
+hr {
+  border: 0;
+  border-top: 2px solid #e94560;
+  margin: 20px auto;
+  width: 20%;
+}
+ 
+/* Main Part Styles */
+.MainPart, .MainPart1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff; /* Ensure sections have a white background */
+}
+ 
+.Part1, .Part3 {
+  flex: 1;
+  margin: 10px;
+}
+ 
+.Part2, .Image1 {
+  flex: 1;
+  margin: 10px;
+}
+ 
+.image1, .image2 {
+  width: 100%;
+ 
+}
+ 
+.Part1 p, .Part3 p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+ 
+.Part1 h3, .Part3 h3 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 3px solid #e94560;
+  padding-bottom: 10px;
+}
+ 
+.MainPart1 {
+  background-color: #ffffff; /* Ensure the background is white */
+}
+ 
+/* About Cards Section */
+.AboutCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+  list-style-type: none;
+}
+ 
+.card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+ 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+ 
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+ 
+.card-content {
+  padding: 20px;
+  background-color: #ffffff; /* White background for card content */
+}
+ 
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+ 
+.card-description {
+  color: #555;
+  font-size: 0.9rem;
+}
+ 
+/* Footer Section */
+.footer {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.image2:hover{
+  transition: transform 0.4s ease;
+}
+ 

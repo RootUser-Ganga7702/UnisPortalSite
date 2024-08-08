@@ -1,0 +1,123 @@
+/* Container Styles */
+.unis-c {
+  box-sizing: border-box;
+  margin: 40px;
+  margin-top: 100px;
+}
+.listType{
+  list-style-type: none;
+}
+ 
+.heading-c {
+  text-align: center;
+  margin: 150px;
+  margin-bottom: 20px;
+}
+ 
+/* Container for Description and Image */
+.container-1-c {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 80px;
+  align-items: center;
+}
+ 
+.Description-c {
+  width: 60%;
+}
+ 
+.image1-c {
+  height: auto;
+  width: auto;
+}
+ 
+/* Banner Card Styles */
+.banner-card-c {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
+  animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+ 
+/* Hover Effect */
+.banner-card-c:hover {
+  border-color: #49525b; /* Change border color on hover */
+  background-color: #f0f8ff; /* Light background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+ 
+/* Heading in Banner Card */
+.banner-heading-c {
+  font-size: 16px; /* Adjusted font size */
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: normal;
+}
+ 
+.heading-c{
+  color: #555;
+  font-weight:bold;
+}
+ 
+/* Flexbox Layout for Banner Content */
+.banner-main-heading-c{
+  color: #555;
+  font-weight:900;
+  font-size: large;
+  text-align: center;
+  margin-top:5px;
+}
+.banner-content-c {
+  display: flex;
+  align-items: center;
+}
+ 
+/* Banner Image Styles */
+.banner-image-c {
+  max-width: 40%;
+  height:150px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+ 
+/* Banner Description Styles */
+.banner-description-c {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+ 
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ 
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .unis {
+    margin: 20px;
+  }
+  .banner-card {
+    max-width: 100%; /* Ensure banner card takes full width on small screens */
+  }
+  .banner-image {
+    max-width: 100%; /* Ensure image scales to fit container */
+  }
+}
+ 
